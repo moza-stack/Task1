@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Management System </title>
+    <!--bootstrap css file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+<!--icons main cssfile-->
+    <link rel="stylesheet" href="./css/all.min.css">
+<!---style css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div id="banana">
+        <h3>Create Account</h3>
+        <input type="text" id="FullName" placeholder="Full Name">
+        <input type="text" id="NationalID" placeholder="National ID">
+        <input type="number" id="Age" placeholder="Age">
+
+        <select id="AccountType">
+            <option value="">Select Account Type</option>
+            <option value="savings">Savings</option>
+            <option value="current">Current</option>
+            <option value="business">Business</option>
+        </select>
+
+        <input type="number" id="InitialDeposit" placeholder="Initial Deposit">
+
+        <button onclick="createAccount()">Create Account</button>
+    </div>
+
+    <div id="banking" style="display:none;">
+        <h2>Bank Operations</h2>
+
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="withdraw()">Withdraw</button>
+        <button onclick="checkBalance()">Check Balance</button>
+        <button onclick="viewTransactions()">Transaction History</button>
+        <button onclick="calculateInterest()">Calculate Interest</button>
+        <button onclick="closeAccount()">Close Account</button>
+        <button onclick="exitSystem()">Exit</button>
+
+        <h3 id="output"></h3>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!--external-->
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
